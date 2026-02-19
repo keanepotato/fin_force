@@ -2,7 +2,8 @@
 
 Official repository for the EMNLP paper:
 
-> **Deriving Strategic Market Insights with Large Language Models: A Benchmark for Forward Counterfactual Generation**
+**Deriving Strategic Market Insights with Large Language Models: A Benchmark for Forward Counterfactual Generation**  
+[📄 Paper](https://aclanthology.org/2025.emnlp-main.575.pdf)
 
 ---
 
