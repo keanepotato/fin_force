@@ -1,0 +1,4 @@
+prompts_file: "/home/llm_scenario_modelling/benchmark_construction/data/final_benchmarks/test.json" # the input key should be "prompt"
+responses_file: "/home/llm_scenario_modelling/evaluation/results/baseline_others/risk_opp_combined_gumbel_responses.jsonl"
+test_input_key: "headline"
+device: "cuda:3"  # or "cpu"

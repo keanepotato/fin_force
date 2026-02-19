@@ -1,0 +1,17 @@
+# Baseline prompting config — GPT-4o (zero-shot)
+# Usage: python _inference.py --config configs/gpt4o.yaml
+
+system_role_file: "prompts/v1_counterfactual_scenarios_news_prompt.txt"  # System prompt for counterfactual generation
+model: "gpt-4o"                   # OpenAI model identifier
+input_file: "../../data/fin_force.json"  # Path to the benchmark input file
+input_key: "headline"             # JSON key to use as the user message
+output_file: "results/gpt4o/cfs_zs_test.json"  # Where to save results
+
+# API keys — leave blank to fall back to environment variables
+# export OPENAI_API_KEY=sk-...
+# export OPENROUTER_API_KEY=sk-or-...
+openai_api_key: ""
+openrouter_api_key: ""
+
+few_shot_file: null               # No few-shot examples for zero-shot variant
+response_model: "Counterfactuals" # Pydantic model class name (see response_config.py)

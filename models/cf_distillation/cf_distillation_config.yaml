@@ -1,0 +1,13 @@
+# CF Distillation Configuration
+# Step 1 of the distillation pipeline: masks topic words and noun phrases
+# in each headline to create a de-identified input for counterfactual generation.
+# Usage: python cf_distillation.py  (reads this file automatically)
+
+input:  "../../data/fin_force.json"           # Path to benchmark input file (expects "headline" key per item)
+output: "results/cf_distillation_processed.json"  # Where to save the masked headline output
+
+model: "gpt-4o"   # OpenAI model used to extract the topic word per headline
+
+# API key — leave blank to fall back to the OPENAI_API_KEY environment variable
+# export OPENAI_API_KEY=sk-...
+api_key: ""

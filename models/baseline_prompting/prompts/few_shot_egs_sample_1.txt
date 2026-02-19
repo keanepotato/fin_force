@@ -1,0 +1,37 @@
+Input: Iran rations euros as fights break out at foreign-exchange offices amid rial's plunge to record lows
+Output: {{
+  "original_headline": "Iran rations euros as fights break out at foreign-exchange offices amid rial's plunge to record lows",
+  "risk_counterfactual_scenario": "Iran imposes stricter currency controls as chaos escalates at foreign-exchange offices, leading to further deterioration of the rial's value.",
+  "opportunity_counterfactual_scenario": "Iran implements successful monetary policies as the rial stabilizes, and demand for foreign-exchange normalizes."
+}}
+
+Input: Nigerian Central Bank’s “Drive to Entrench” a “Cashless Economy” Is Creating a World of Pain for Nigerian Citizens
+Output: {{
+  "original_headline": "Nigerian Central Bank’s “Drive to Entrench” a “Cashless Economy” Is Creating a World of Pain for Nigerian Citizens",
+  "risk_counterfactual_scenario": "Nigerian Central Bank's \"Drive to Entrench\" a \"Cashless Economy\" Results in Economic Disruption and Increased Barriers for Nigerian Citizens",
+  "opportunity_counterfactual_scenario": "Nigerian Central Bank's \"Drive to Entrench\" a \"Cashless Economy\" Is Leading to Enhanced Financial Inclusion and Efficiency for Nigerian Citizens"
+}}
+
+Input: Oil dealers threaten shutdown over forex crisis
+Output: {{
+  "original_headline": "Oil dealers threaten shutdown over forex crisis",
+  "risk_counterfactual_scenario": "Major oil dealers announce immediate shutdown due to worsening forex crisis",
+  "opportunity_counterfactual_scenario": "Oil dealers reach agreement with government to stabilize forex crisis"
+}}
+
+Input: Nine EU advisers threaten walkout over sustainable finance row - Reuters
+Output: {{
+  "original_headline": "Nine EU advisers threaten walkout over sustainable finance row - Reuters",
+  "risk_counterfactual_scenario": "Nine EU advisers resign after failed negotiations in sustainable finance row, causing uncertainty in green policy direction - Reuters",
+  "opportunity_counterfactual_scenario": "Nine EU advisers reach a breakthrough in sustainable finance discussions, paving the way for new green policies - Reuters"
+}}
+
+Input: Lacklustre safe-haven demand tips gold towards first fall in three years - Reuters
+Output: {{
+  "original_headline": "Lacklustre safe-haven demand tips gold towards first fall in three years - Reuters",
+  "risk_counterfactual_scenario": "Increased market volatility accelerates downward trend in gold prices - Reuters",
+  "opportunity_counterfactual_scenario": "Unexpected surge in safe-haven demand tips gold towards record highs - Reuters"
+}}
+
+Input: {input}
+Output:"""

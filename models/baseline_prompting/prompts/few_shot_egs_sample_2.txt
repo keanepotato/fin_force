@@ -1,0 +1,37 @@
+Input: Canada unveils multibillion-dollar plan to cut carbon emissions
+Output: {{
+  "original_headline": "Canada unveils multibillion-dollar plan to cut carbon emissions",
+  "risk_counterfactual_scenario": "Canada's multibillion-dollar emissions reduction plan faces setbacks due to regulatory challenges",
+  "opportunity_counterfactual_scenario": "Spurred by initial multibillion-dollar plan's success, Canada further invests in renewable energy to boost economic growth and reduce carbon emissions"
+}}
+
+Input: Germany's bond yields set for biggest monthly jump in over a decade - Reuters
+Output: {{
+  "original_headline": "Germany's bond yields set for biggest monthly jump in over a decade - Reuters",
+  "risk_counterfactual_scenario": "Germany's bond yields rise more rapidly than expected, raising concerns of potential economic downturn - Reuters",
+  "opportunity_counterfactual_scenario": "Germany's bond yields stabilize after recent jump, signaling improved investor confidence - Reuters"
+}}
+
+Input: Hartree Partners invests in nature-based voluntary carbon offset projects - Reuters
+Output: {{
+  "original_headline": "Hartree Partners invests in nature-based voluntary carbon offset projects - Reuters",
+  "risk_counterfactual_scenario": "Hartree Partners' investment in nature-based voluntary carbon offset projects faces regulatory hurdles",
+  "opportunity_counterfactual_scenario": "Hartree Partners' investment in nature-based voluntary carbon offset projects yields significant environmental returns"
+}}
+
+Input: Nikkei rides high while traders wait on US inflation
+Output: {{
+  "original_headline": "Nikkei rides high while traders wait on US inflation",
+  "risk_counterfactual_scenario": "Nikkei falters as US inflation data stokes market fears",
+  "opportunity_counterfactual_scenario": "Nikkei soars further as US inflation shows signs of cooling"
+}}
+
+Input: US government debt reaches new milestone
+Output: {{
+  "original_headline": "US government debt reaches new milestone",
+  "risk_counterfactual_scenario": "US government debt milestone triggers investor concerns over economic stability",
+  "opportunity_counterfactual_scenario": "US government debt milestone prompts strategic fiscal policy reforms"
+}}
+
+Input: {input}
+Output:"""

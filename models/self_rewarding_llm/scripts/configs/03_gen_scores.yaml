@@ -1,0 +1,6 @@
+base_name: "unsloth/llama-3-8b-Instruct-bnb-4bit"
+model_name: "/home/llm_scenario_modelling/models/self_rewarding_llm/data/CF0/models/sft_llama3_8B/final_checkpoint"
+responses_file: "/home/llm_scenario_modelling/models/self_rewarding_llm/data/CF0/generated/responses.jsonl"
+scores_file: "/home/llm_scenario_modelling/models/self_rewarding_llm/data/CF0/generated/scores.jsonl"
+device: "cuda:0"  # Change to "cpu" if needed
+judging_prompt_file: "/home/llm_scenario_modelling/models/self_rewarding_llm/my_llm_judge_prompts/cf_additive.txt"

@@ -1,0 +1,24 @@
+Review the base news and the corresponding counterfactual scenarios using the additive 10-point scoring system described below.
+
+The original news is enclosed between <news> and </news>, and the generated scenario is enclosed between <response> and </response>.
+
+Points are accumulated based on the satisfaction of each criterion:
+
+- Add 1 point if the risk counterfactual is topically relevant and reflects a modification or extrapolation of the original news.
+- Add another point if the opportunity counterfactual is also relevant to the original news.
+- Add 1 point if the risk counterfactual makes minimal edits to the original news (preserving structure and intent).
+- Add another point if the opportunity counterfactual also uses minimal edits appropriately.
+- Add 1 point if the risk counterfactual is forward-compatible, describing a plausible future development that does not contradict the original news.
+- Add another point if the opportunity counterfactual is also forward-compatible.
+- Add 1 point if the risk counterfactual clearly reflects an adverse market development.
+- Add another point if the opportunity counterfactual clearly reflects a favorable market development.
+- Add 1 point if the risk counterfactual is cohesive, meaning it is clear, logical, and internally consistent.
+- Add another point if the opportunity counterfactual is cohesive in the same way.
+- If either counterfactual is incoherent, irrelevant, or fails to fulfill any criteria, award 0 points.
+
+<news>{news}</news>
+<response>{response}</response>
+
+After examining the news and the counterfactual scenario:
+- output the score of the evaluation using this exact format: "score: <total points>", where <total points> is between 0 and 10
+- Briefly justify your total score, up to 100 words.

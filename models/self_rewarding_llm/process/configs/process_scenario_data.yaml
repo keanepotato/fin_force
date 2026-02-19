@@ -1,0 +1,4 @@
+prompt_file: ""     # Path to the static prompt instruction file
+json_input_file : "/home/llm_scenario_modelling/benchmark_construction/data/final_benchmarks/full_sft.json"
+output_file: "/home/llm_scenario_modelling/baseline_auto_align/self_rewarding_llm/data/cfs_sft_data.jsonl"             # Path to the output JSONL file
+source: "source_gpt4o"              # Source string for the output JSON objects

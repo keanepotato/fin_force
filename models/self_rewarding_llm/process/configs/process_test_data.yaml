@@ -1,0 +1,4 @@
+prompt_file: ""     # Path to the static prompt instruction file
+input_dir: "/home/finaxai/llm_scenario_modelling/data/inference_input/llm_input/daily/test"             # Directory containing input text files (e.g., 2021-01-01.txt)
+output_file: "/home/finaxai/llm_scenario_modelling/models/self_rewarding_llm/oxen_implementation/data/test_data/test_news.jsonl"             # Path to the output JSONL file
+source: "test"              # Source string for the output JSON objects

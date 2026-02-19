@@ -1,0 +1,17 @@
+# Baseline prompting config — GPT-4o with CF Distillation (masked headline input)
+# Requires running cf_distillation first to produce the masked input file.
+# Usage: python _inference.py --config configs/gpt4o_distil.yaml
+
+system_role_file: "prompts/cf_distillation.txt"   # System prompt specific to distillation task
+model: "gpt-4o"                                   # OpenAI model identifier
+input_file: "../cf_distillation/results/cf_distillation_processed.json"  # Output from cf_distillation step
+input_key: "masked_content"       # Key holding the masked headline in the distillation output
+output_file: "results/distil_cf/distil_cf_test.json"  # Where to save results
+
+# API keys — leave blank to fall back to environment variables
+# export OPENAI_API_KEY=sk-...
+openai_api_key: ""
+openrouter_api_key: ""
+
+few_shot_file: null               # No few-shot examples for distillation variant
+response_model: "Counterfactual_masked"  # Uses the masked response schema (see response_config.py)

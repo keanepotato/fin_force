@@ -1,0 +1,16 @@
+# Baseline prompting config — Qwen 2.5 72B via OpenRouter
+# Usage: python _inference.py --config configs/qwen2.5_72B.yaml
+
+system_role_file: "prompts/v1_counterfactual_scenarios_news_prompt.txt"  # System prompt for counterfactual generation
+model: "qwen/qwen-2.5-72b-instruct"  # OpenRouter model identifier
+input_file: "../../data/fin_force.json"  # Path to the benchmark input file
+input_key: "headline"             # JSON key to use as the user message
+output_file: "results/qwen2.5_72B/cfs_zs_test.json"  # Where to save results
+
+# API keys — leave blank to fall back to environment variables
+# export OPENROUTER_API_KEY=sk-or-...
+openai_api_key: ""
+openrouter_api_key: ""
+
+few_shot_file: null               # Set to a prompt file path to enable few-shot
+response_model: "Counterfactuals" # Pydantic model class name (see response_config.py)

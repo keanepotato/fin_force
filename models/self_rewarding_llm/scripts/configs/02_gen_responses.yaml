@@ -1,0 +1,6 @@
+base_name: "unsloth/llama-3-8b-Instruct-bnb-4bit" # tokenizer
+model_name: "/home/finaxai/llm_scenario_modelling/models/self_rewarding_llm/data/N0/models/sft_llama3.1_8B/final_checkpoint" # model to be utilised
+prompts_file: "/home/finaxai/llm_scenario_modelling/models/self_rewarding_llm/data/test_data/test_news.jsonl"
+responses_file: "/home/finaxai/llm_scenario_modelling/models/self_rewarding_llm/data/test_data/sft_test_three_scenarios.jsonl"
+device: "cuda:0"
+mode: "inference" # can change to inference to ensure that we only do one sample; otherwise if training, we will do 4 samples

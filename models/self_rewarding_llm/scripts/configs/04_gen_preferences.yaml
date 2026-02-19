@@ -1,0 +1,2 @@
+scores_file: "/home/finaxai/llm_scenario_modelling/models/self_rewarding_llm/oxen_implementation/data/N0/generated/scores.jsonl" # the file of scores to use for generating preferences
+preferences_file: "/home/finaxai/llm_scenario_modelling/models/self_rewarding_llm/oxen_implementation/data/N0/generated/preferences.jsonl" # output file

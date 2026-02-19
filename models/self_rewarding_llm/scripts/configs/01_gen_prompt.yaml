@@ -1,0 +1,5 @@
+base_name: "unsloth/llama-3-8b-Instruct-bnb-4bit"
+model_name: "/home/llm_scenario_modelling/models/self_rewarding_llm/data/CF0/models/sft_llama3_8B/final_checkpoint"
+training_data: "/home/llm_scenario_modelling/models/self_rewarding_llm/data/CF0/train/cfs_sft_data.jsonl"
+generated_prompts_file: "/home/llm_scenario_modelling/models/self_rewarding_llm/data/CF0/generated/prompts.jsonl"
+num_prompts_to_generate: 1

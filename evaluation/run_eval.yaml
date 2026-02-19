@@ -1,0 +1,54 @@
+# ============================================================
+# Fin-Force Evaluation Configuration
+# ============================================================
+# Run LLM-based evaluation using llm_evaluate.py
+# Usage: pass this file as configuration to your evaluation script
+# ============================================================
+
+# ------------------------------------------------------------
+# API Key
+# Set your OpenAI API key here or (preferably) via env variable:
+#   export OPENAI_API_KEY=sk-...
+# ------------------------------------------------------------
+openai_api_key: ""   # leave blank to fall back to OPENAI_API_KEY env variable
+
+# ------------------------------------------------------------
+# Input / Output paths
+# ------------------------------------------------------------
+input_file: "data/fin_force.json"          # Path to the benchmark input file
+output_file: "results/evaluation_out.json" # Path where per-example results are saved
+output_agg_file: "results/evaluation_agg.txt" # Path where aggregated summary is saved
+
+# Whether the input file is in the baseline_prompting output format
+# (JSON array with an "output" key per entry containing original_headline,
+#  risk_counterfactual, opportunity_counterfactual)
+load_prompting_directly: true
+
+# Whether to resume from a partially-written raw LLM results file
+load_raw_llm_results: false
+
+# ------------------------------------------------------------
+# Model
+# ------------------------------------------------------------
+model: "gpt-4o"   # OpenAI model to use as judge (e.g. gpt-4o, gpt-4o-mini)
+
+# ------------------------------------------------------------
+# Evaluation types to run
+# Only criteria listed here will be evaluated.
+# Available options: directionality, forward_compatibility
+# ------------------------------------------------------------
+evaluation_types:
+  - directionality
+  - forward_compatibility
+
+# ------------------------------------------------------------
+# Rubric file paths for each evaluation type
+# Each criterion has a separate rubric for risk and opportunity counterfactuals.
+# ------------------------------------------------------------
+directionality:
+  rubric: "evaluation/rubrics/directionality_risk.txt"          # Rubric for risk counterfactuals
+  opp_rubric: "evaluation/rubrics/directionality_opportunity.txt" # Rubric for opportunity counterfactuals
+
+forward_compatibility:
+  rubric: "evaluation/rubrics/forward_compatibility.txt"   # Same rubric applies to both
+  opp_rubric: "evaluation/rubrics/forward_compatibility.txt"

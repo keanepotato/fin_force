@@ -1,0 +1,4 @@
+dataset: /home/finaxai/llm_scenario_modelling/models/self_rewarding_llm/data/N0/train/news.jsonl
+base_model: unsloth/llama-3-8b-Instruct-bnb-4bit
+model: unsloth/llama-3-8b-Instruct-bnb-4bit
+output: /home/finaxai/llm_scenario_modelling/models/self_rewarding_llm/data/N0/models/sft_llama3.1_8B

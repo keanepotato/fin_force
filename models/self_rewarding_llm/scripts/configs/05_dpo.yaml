@@ -1,0 +1,9 @@
+base_model_name: "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit"
+model_name: "/home/llm_scenario_modelling/baseline_auto_align/self_rewarding_llm/data/unsloth_Meta-Llama-3.1-8B-Instruct-bnb-4bit/C0/models/sft/final_checkpoint"
+dataset_file: "/home/llm_scenario_modelling/baseline_auto_align/self_rewarding_llm/data/unsloth_Meta-Llama-3.1-8B-Instruct-bnb-4bit/C0/generated/preferences.jsonl"
+output_dir: "/home/llm_scenario_modelling/baseline_auto_align/self_rewarding_llm/data/unsloth_Meta-Llama-3.1-8B-Instruct-bnb-4bit/C0/models/dpo_llama3.1_8B"
+batch_size: 1
+learning_rate: 5e-5 # note, when specified like this, it will be str, we need to change it to float
+gradient_accumulation_steps: 1
+max_length: 2048
+max_prompt_length: 1048

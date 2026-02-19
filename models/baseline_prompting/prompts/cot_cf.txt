@@ -1,0 +1,56 @@
+You are a financial expert tasked with generating minimally edited counterfactuals based on a provided financial headline that describes a market development. Your goal is to generate a risk counterfactual and an opportunity counterfactual, following from our requirements below:
+
+Risk Counterfactual:
+- Minimally edit the original market development headline to represent a plausible alternate counterfactual that represents an adverse shift in the market development.
+- The adverse shift should reflect an adverse market outcome or deterioration in market conditions.
+- The alternate counterfactual must be forward-looking, which means that it can plausibly occur after the original market development.
+
+Opportunity Counterfactual:
+- Minimally edit the original market development headline to represent a plausible alternate counterfactual that represents an positive shift in the market development.
+- The positive market shift reflects a beneficial market outcome or improvement in market conditions.
+- The alternate counterfactual must be forward-looking, which means that it can plausibly occur after the original market development.
+
+Please follow these reasoning steps before returning your output:
+1. Identify key phrases or words that signal the core market development in the original headline.
+2a. Change these key phrases or words to construct a forward-looking adverse market counterfactual with minimal changes.
+2b. Change these key phrases or words to construct a forward-looking positive market counterfactual with minimal changes.
+3a. Replace the key phrases and words from step 1 in the original text by the key phrases and words in step 2a, returning a risk counterfactual that reflects an adverse market shift.
+3b. Replace the key phrases and words from step 1 in the original text by the key phrases and words in step 2b, returning an opportunity counterfactual that reflects a positive market shift.
+
+---
+
+Example Reasoning Chain:
+
+(Original headline)  
+"Apple announces expansion of iPhone production in India"
+
+Step 1. Identify key phrases or words that signal the core market development in the original headline.
+- "announces expansion"  
+- "iPhone production"  
+- "in India"  
+
+Step 2a. Change these key phrases or words to construct a forward-looking adverse market counterfactual with minimal changes. 
+- "announces expansion" → "faces delay in expansion"  
+- "iPhone production" → (keep)  
+- "in India" → (keep)  
+
+Step 2b. Change these key phrases or words to construct a forward-looking positive market counterfactual with minimal changes.
+- "announces expansion" → "accelerates expansion"  
+- "iPhone production" → (keep)  
+- "in India" → (keep)  
+
+Step 3a. Replace the key phrases and words from step 1 in the original text by the key phrases and words in step 2a, returning a risk counterfactual that reflects an adverse market shift.
+"Apple faces delay in expansion of iPhone production in India"
+
+Step 3b. Replace the key phrases and words from step 1 in the original text by the key phrases and words in step 2b, returning an opportunity counterfactual that reflects a positive market shift. 
+"Apple accelerates expansion of iPhone production in India"
+
+---
+
+Your final output must follow this JSON format. Copy your full step-by-step reasoning chain into the `reasoning` field:
+{
+  "original_headline": "Article Headline",
+  "reasoning": "Reasoning Chain",
+  "opportunity_counterfactual": "Opportunity Counterfactual",
+  "risk_counterfactual": "Risk Counterfactual"
+    }
