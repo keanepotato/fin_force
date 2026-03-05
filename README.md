@@ -1,6 +1,6 @@
 # Fin-Force
 
-Official repository for the EMNLP paper:
+Official repository for the published EMNLP 2025 Main Conference Oral 🏆 paper:
 
 **Deriving Strategic Market Insights with Large Language Models: A Benchmark for Forward Counterfactual Generation**  
 [📄 Paper](https://aclanthology.org/2025.emnlp-main.575.pdf)
@@ -16,8 +16,41 @@ Official repository for the EMNLP paper:
 
 These counterfactuals must be *forward-compatible* — they represent plausible developments that could occur *after* the original news event, rather than negating it; and also *directional* - they represent clear and meaningful market shift to either an opportunity or risk in market conditions.
 
+
+## Potential Research Ideas Using Fin-Force
+
 > [!NOTE]
-> We have explored the financial domain for this benchmark, however we believe that the same concepts can be applied to various fields that require dynamic scenario-planning (climate disaster response etc.)
+Fin-Force is designed not only as a benchmark for forward counterfactual generation in financial markets, but it can also function as a testbed for studying **future-oriented reasoning, narrative understanding, and scenario generation in large language models**. Below we outline several research ideas that can be explored, be it with Fin-Force functioning as a primary benchmark, auxiliary evaluation dataset, or source of examples for methodological studies:
+
+1. **Forward Counterfactual Reasoning**  
+   Investigating how well language models can generate plausible future developments conditioned on real-world events, rather than negating past outcomes.
+
+2. **Narrative Understanding in Financial News**  
+   Studying how models interpret and extrapolate the implicit market narratives embedded in financial headlines.
+
+3. **Strategic Scenario Generation**  
+   Evaluating the ability of models to generate risk and opportunity scenarios that could inform strategic planning or decision-making.
+
+4. **Controlled and Directional Text Generation**  
+   Developing techniques that explicitly steer models toward directional outputs (e.g., adverse vs favorable market developments).
+
+5. **Benchmarking Counterfactual Generation Methods**  
+   Comparing approaches such as prompting, distillation, preference optimization, and model editing for structured counterfactual generation.
+
+6. **Text-Based Financial Forecasting**  
+   Exploring how language models can use narrative signals from news to generate forward-looking financial scenarios.
+
+7. **Reasoning Benchmark for Large Language Models**  
+   Using Fin-Force as a benchmark to evaluate the reasoning capabilities of frontier LLMs on structured future-oriented reasoning tasks.
+
+8. **Alignment and Preference Learning for Scenario Generation**  
+   Studying how techniques such as RLHF, DPO, or self-rewarding training influence the quality and directionality of generated scenarios.
+
+9. **Human–AI Collaborative Decision Support**  
+   Investigating how AI-generated forward counterfactuals can assist analysts in risk assessment, scenario planning, or strategic analysis.
+
+10. **Cross-Domain Scenario Planning Benchmarks**  
+   Extending the Fin-Force framework to other domains requiring scenario planning, such as climate risk analysis, disaster response, policy forecasting, or supply-chain resilience.
 
 ---
 
